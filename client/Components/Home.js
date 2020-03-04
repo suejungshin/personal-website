@@ -1,10 +1,14 @@
 import React from 'react';
-import Introduction from './Introduction.js';
 
 const Home = (props) => {
 
   return (<div>
-    <Introduction></Introduction>
+    <div className='container'>
+      <div className='spacer'></div>
+      <h1>Hi, I'm Suejung!</h1>
+      <div>Thanks for stopping by! Check out some of my projects!</div>
+      <div className='spacer'></div>
+    </div>
   </div>)
 
 }

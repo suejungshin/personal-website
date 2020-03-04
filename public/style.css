@@ -9,33 +9,29 @@ img {
   border-radius: 20px;
 }
 
-.dog-band {
+footer {
   background-image: url('dog-footer.png');
   background-repeat: repeat-x;
   background-size: 300px;
   height: 100px;
 }
 
-.spacer {
-  height: 150px;
+h1 {
+  font-family: 'Luckiest Guy', sans-serif;
+  color: #e51b5d;
 }
 
+.spacer {
+  height: 100px;
+}
 
 .container {
-  /* flex-flow: row nowrap;
-  justify-content: center;
-  align-items: center;
-  display: flex;
-  height: 100%;
-  width: 100%;
-  padding: 0 2vw;
-  list-style-type: none; */
+  padding-top: 100px;
 }
 
 .header {
   position: fixed;
   z-index: 100;
-  height: 80px;
   width: 100%;
   background-color: white;
   color: #696e76;
@@ -49,13 +45,10 @@ img {
   align-items: center;
   list-style-type: none;
   text-align: center;
-  padding: 0px;
-  margin: 0px;
 }
 
-.menu li {
-  display: inline-block;
-  vertical-align: middle;
+ul {
+  margin: 10px;
 }
 
 .navbar-item {
@@ -64,10 +57,8 @@ img {
   font-size: 18px;
 }
 
-.navbar-item a {
-  cursor: pointer;
-}
 .navbar-item a:hover {
+  cursor: pointer;
   color: #e51b5d;
 }
 
@@ -80,6 +71,7 @@ img {
   transition: all .2s;
   display: inline-block;
   cursor: pointer;
+  margin-left: 30px;
 }
 
 .project {
@@ -92,7 +84,6 @@ img {
   padding: 2vw;
   filter: alpha(opacity=60);
   align-self: stretch;
-  -webkit-transition: all .5s;
   transition: all .5s;
   cursor: auto;
   display: flex;

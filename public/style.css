@@ -5,29 +5,41 @@ body {
   background-color: #fefafc;
 }
 
+img {
+  border-radius: 20px;
+}
+
+.dog-band {
+  background-image: url('dog-footer.png');
+  background-repeat: repeat-x;
+  background-size: 300px;
+  height: 100px;
+}
+
+.spacer {
+  height: 150px;
+}
+
+
 .container {
-  flex-flow: row nowrap;
+  /* flex-flow: row nowrap;
   justify-content: center;
   align-items: center;
   display: flex;
   height: 100%;
   width: 100%;
   padding: 0 2vw;
-  list-style-type: none;
+  list-style-type: none; */
 }
 
 .header {
   position: fixed;
   z-index: 100;
   height: 80px;
-  width: 100vw;
+  width: 100%;
   background-color: white;
   color: #696e76;
   box-shadow: 0 5px 30px -5px rgba(0,0,0,.2);
-}
-
-.jumbotron {
-  padding-top: 100px;
 }
 
 .menu {
@@ -37,6 +49,8 @@ body {
   align-items: center;
   list-style-type: none;
   text-align: center;
+  padding: 0px;
+  margin: 0px;
 }
 
 .menu li {
@@ -47,5 +61,45 @@ body {
 .navbar-item {
   margin: 10px .5vw;
   padding: 0 15px;
-  font-size: 18.88px;
+  font-size: 18px;
 }
+
+.navbar-item a {
+  cursor: pointer;
+}
+.navbar-item a:hover {
+  color: #e51b5d;
+}
+
+.hire-me-button {
+  color: #fff;
+  background-color: #e51b5d;
+  padding: 3px 6px;
+  font-weight: 700;
+  border-radius: .25rem;
+  transition: all .2s;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.project {
+  background-color: #fff;
+  box-shadow: 0 0 15px 0 #e4e4e4;
+  margin: 1vw;
+  border-radius: 20px;
+  width: 27vw;
+  min-width: 300px;
+  padding: 2vw;
+  filter: alpha(opacity=60);
+  align-self: stretch;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+  cursor: auto;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+
+

@@ -22,22 +22,13 @@ class App extends React.Component {
     })
   }
 
-  renderView() {
-    const view = this.state.view;
-
-    if (view === 'home') {
-      return <Home></Home>
-    } else if (view === 'about') {
-      return <About></About>
-    } else if (view === 'projects') {
-      return <Projects></Projects>
-    }
-  }
 
   render() {
     return (<div>
-      <Header changeView={this.changeView}></Header>
-      {this.renderView()}
+      <Header></Header>
+      <Home></Home>
+      <About></About>
+      <Projects></Projects>
       <Footer></Footer>
       </div>)
   }

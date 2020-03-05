@@ -7,6 +7,7 @@ body {
 
 .photo {
   border-radius: 20px;
+  box-shadow: 0 0 15px 0 #e4e4e4;
 }
 
 footer {
@@ -18,6 +19,18 @@ footer {
 
 h1 {
   font-family: 'Luckiest Guy', sans-serif;
+  color: #e51b5d;
+}
+
+h3 {
+  font-weight: 700;
+}
+
+h5 {
+  font-weight: 700;
+}
+
+.caption {
   color: #e51b5d;
 }
 
@@ -78,14 +91,19 @@ ul {
   margin-left: 30px;
 }
 
+.proj-container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
 .project {
   background-color: #fff;
   box-shadow: 0 0 15px 0 #e4e4e4;
   margin: 1vw;
   border-radius: 20px;
-  width: 27vw;
-  min-width: 300px;
-  padding: 2vw;
+  width: 100%;
+  padding: 30px;
   filter: alpha(opacity=60);
   align-self: stretch;
   transition: all .5s;

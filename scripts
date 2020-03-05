@@ -3,3 +3,31 @@ sudo /home/ec2-user/.nvm/versions/node/v13.10.0/bin/node server/index.js
 ps aux | grep nohup
 ec2-user 13116  0.0  0.0 119420   956 pts/0    S+   07:54   0:00 grep --color=auto nohup
 [ec2-user@ip-172-31-29-135 personal-website]$ kill 13116
+
+
+[ec2-user@ip-172-31-29-135 personal-website]$ sudo /home/ec2-user/.nvm/versions/node/v13.10.0/bin/node node_modules/.bin/pm2-runtime start ecosystem.config.js
+2020-03-05T08:22:33: PM2 log: Launching in no daemon mode
+2020-03-05T08:22:33: PM2 log: App [personal-website:0] starting in -cluster mode-
+2020-03-05T08:22:33: PM2 log: App [personal-website:0] online
+Listening on port 80
+^C2020-03-05T08:23:46: PM2 log: App name:personal-website id:0 disconnected
+2020-03-05T08:23:46: PM2 log: App [personal-website:0] exited with code [0] via signal [SIGINT]
+2020-03-05T08:23:46: PM2 log: App [personal-website:0] will restart in 100ms
+2020-03-05T08:23:46: PM2 log: Stopping app:personal-website id:0
+2020-03-05T08:23:46: PM2 log: pid=14692 msg=process killed
+2020-03-05T08:23:46: PM2 log: PM2 successfully stopped
+[ec2-user@ip-172-31-29-135 personal-website]$ sudo /home/ec2-user/.nvm/versions/node/v13.10.0/bin/node node_modules/.bin/pm2 start ecosystem.config.js
+[PM2] Spawning PM2 daemon with pm2_home=/root/.pm2
+[PM2] PM2 Successfully daemonized
+[PM2][WARN] Applications personal-website not running, starting...
+[PM2][WARN] Using builtin node.js version on version v13.10.0
+[PM2] App [personal-website] launched (1 instances)
+┌────┬────────────────────┬──────────┬──────┬───────────┬──────────┬──────────┐
+│ id │ name               │ mode     │ ↺    │ status    │ cpu      │ memory   │
+├────┼────────────────────┼──────────┼──────┼───────────┼──────────┼──────────┤
+│ 0  │ personal-website   │ cluster  │ 0    │ online    │ 0%       │ 34.6mb   │
+└────┴────────────────────┴──────────┴──────┴───────────┴──────────┴──────────┘
+[ec2-user@ip-172-31-29-135 personal-website]$
+
+sudo /home/ec2-user/.nvm/versions/node/v13.10.0/bin/node node_modules/.bin/pm2 stop all
+sudo /home/ec2-user/.nvm/versions/node/v13.10.0/bin/node node_modules/.bin/pm2 start ecosystem.config.js

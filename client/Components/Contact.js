@@ -10,17 +10,17 @@ const Contact = (props) => {
       <br></br>
       <br></br>
       <h4><img src='email-icon.png' height='25px' width='28px'></img>&nbsp;&nbsp;Email</h4>
-      <a href='mailto:suejung.shin@gmail.com'>suejung.shin@gmail.com</a>
+      <a target="_blank" rel="noopener" href='mailto:suejung.shin@gmail.com'>suejung.shin@gmail.com</a>
       <br></br>
       <br></br>
       <br></br>
       <h4><img src='linkedin-icon.png' height='25px' width='28px'></img>&nbsp;&nbsp;LinkedIn</h4>
-      <a href='https://www.linkedin.com/in/suejungshin'>linkedin.com/in/suejungshin</a>
+      <a target="_blank" rel="noopener" href='https://www.linkedin.com/in/suejungshin'>linkedin.com/in/suejungshin</a>
       <br></br>
       <br></br>
       <br></br>
       <h4><img src='github-icon.png' height='25px' width='25px'></img>&nbsp;&nbsp;GitHub</h4>
-      <a href='https://www.github.com/suejungshin'>github.com/suejungshin</a>
+      <a target="_blank" rel="noopener" href='https://www.github.com/suejungshin'>github.com/suejungshin</a>
       <br></br>
     </div>
   </div>)

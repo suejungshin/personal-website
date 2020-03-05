@@ -1,0 +1,5 @@
+nohup sudo /home/ec2-user/.nvm/versions/node/v13.10.0/bin/node server/index.js
+sudo /home/ec2-user/.nvm/versions/node/v13.10.0/bin/node server/index.js
+ps aux | grep nohup
+ec2-user 13116  0.0  0.0 119420   956 pts/0    S+   07:54   0:00 grep --color=auto nohup
+[ec2-user@ip-172-31-29-135 personal-website]$ kill 13116

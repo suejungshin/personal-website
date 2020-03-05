@@ -15,7 +15,7 @@ const Projects = (props) => {
     </div>
     <br></br>
     <br></br>
-    <h5>...plus so much more on <a href='https://github.com/suejungshin'>Github!</a></h5>
+    <h5>...plus so much more on <a target="_blank" rel="noopener" href='https://github.com/suejungshin'>Github!</a></h5>
   </div>)
 
 }

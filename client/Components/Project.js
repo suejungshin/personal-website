@@ -10,7 +10,7 @@ const Project = ({ project }) => {
     <div className='caption'>{project.techStack}</div>
     <br></br>
     <p>{project.description}</p>
-    <a href={project.github}>Github repo</a>
+    <a target="_blank" rel="noopener" href={project.github}>Github repo</a>
   </div>)
 }
 

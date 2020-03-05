@@ -5,7 +5,7 @@ body {
   background-color: #fefafc;
 }
 
-img {
+.photo {
   border-radius: 20px;
 }
 
@@ -22,14 +22,15 @@ h1 {
 }
 
 .spacer {
-  height: 100px;
+  height: 50px;
 }
 
 .container {
-  padding-top: 100px;
+  padding-top: 120px;
   padding-left: 40px;
   padding-right: 40px;
   padding-bottom: 70px;
+  width: 600px;
 }
 
 .header {
@@ -68,7 +69,7 @@ ul {
 .hire-me-button {
   color: #fff;
   background-color: #e51b5d;
-  padding: 3px 6px;
+  padding: 4px 7px;
   font-weight: 700;
   border-radius: .25rem;
   transition: all .2s;
